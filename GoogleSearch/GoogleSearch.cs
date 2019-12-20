@@ -2,6 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
+using System.Drawing;
 
 namespace GoogleSearch
 {
@@ -14,6 +15,9 @@ namespace GoogleSearch
             ChromeDriver driver = new ChromeDriver();
 
             driver.Navigate().GoToUrl("https://www.google.com/");
+
+            driver.Manage().Window.Maximize();
+
             driver.FindElementByXPath("//*[@title='Pesquisar']").SendKeys("Cotação do dólar");
             var list = driver.FindElementsByXPath("//*[@value='Pesquisa Google']");
             list[1].Click();
