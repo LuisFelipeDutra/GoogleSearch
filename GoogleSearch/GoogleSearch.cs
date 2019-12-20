@@ -24,6 +24,9 @@ namespace GoogleSearch
 
             var timeSpan = DateTime.Now;
             var time = timeSpan.TimeOfDay.ToString();
+
+            var element = driver.FindElementByXPath("//*[(@aria-label='Conversor de taxa de câmbio')]");
+            Assert.IsTrue(element.Displayed);
             
             Screenshot print = ((ITakesScreenshot)driver).GetScreenshot();
             print.SaveAsFile(@"C:\prints\CotacaoDolar" + time.Replace(":", "") + ".png");
