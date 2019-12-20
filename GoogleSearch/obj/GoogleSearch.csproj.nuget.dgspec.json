@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PROJECTS\\GoogleSearch\\GoogleSearch\\GoogleSearch.csproj": {}
+    "C:\\Users\\Luis_Dutra\\source\\repos\\GoogleSearch\\GoogleSearch\\GoogleSearch.csproj": {}
   },
   "projects": {
-    "C:\\PROJECTS\\GoogleSearch\\GoogleSearch\\GoogleSearch.csproj": {
+    "C:\\Users\\Luis_Dutra\\source\\repos\\GoogleSearch\\GoogleSearch\\GoogleSearch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PROJECTS\\GoogleSearch\\GoogleSearch\\GoogleSearch.csproj",
+        "projectUniqueName": "C:\\Users\\Luis_Dutra\\source\\repos\\GoogleSearch\\GoogleSearch\\GoogleSearch.csproj",
         "projectName": "GoogleSearch",
-        "projectPath": "C:\\PROJECTS\\GoogleSearch\\GoogleSearch\\GoogleSearch.csproj",
+        "projectPath": "C:\\Users\\Luis_Dutra\\source\\repos\\GoogleSearch\\GoogleSearch\\GoogleSearch.csproj",
         "packagesPath": "C:\\Users\\Luis_Dutra\\.nuget\\packages\\",
-        "outputPath": "C:\\PROJECTS\\GoogleSearch\\GoogleSearch\\obj\\",
+        "outputPath": "C:\\Users\\Luis_Dutra\\source\\repos\\GoogleSearch\\GoogleSearch\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

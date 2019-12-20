@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using System;
 
 namespace GoogleSearch
 {
@@ -13,12 +14,15 @@ namespace GoogleSearch
             ChromeDriver driver = new ChromeDriver();
 
             driver.Navigate().GoToUrl("https://www.google.com/");
-
             driver.FindElementByXPath("//*[@title='Pesquisar']").SendKeys("Cotação do dólar");
-
             var list = driver.FindElementsByXPath("//*[@value='Pesquisa Google']");
-
             list[1].Click();
+
+            var timeSpan = DateTime.Now;
+            var time = timeSpan.TimeOfDay.ToString();
+            
+            Screenshot print = ((ITakesScreenshot)driver).GetScreenshot();
+            print.SaveAsFile(@"C:\prints\CotacaoDolar" + time.Replace(":", "") + ".png");
 
             driver.Close();
         }
